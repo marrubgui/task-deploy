@@ -1,0 +1,36 @@
+GET http://localhost:3000/api/tasks
+
+###
+GET http://localhost:3000/api/tasks?size=6&page=0&title=react
+
+###
+
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Hacer un sitio web en Javascript",
+    "description": "trabajo freelance",
+    "done": true
+}
+
+###
+GET http://localhost:3000/api/tasks/60976f373f92711a2d73cd69
+
+
+###
+DELETE http://localhost:3000/api/tasks/60976efbbe17df1a23eed1f1
+
+###
+
+GET http://localhost:3000/api/tasks/done
+
+
+###
+PUT http://localhost:3000/api/tasks/60976efbbe17df1a23eed1f8
+Content-Type: application/json
+
+{
+    "title":"hacer un sitio web en React3"
+}
+
